@@ -1,0 +1,172 @@
+/* Création Variables Couleurs */
+
+:root {
+	--main-black: #1c252f;
+	--main-green: #06c2c9;
+	--hero-color: #e31b6c;
+}
+
+/* Base Reset */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* box-sizing and font sizing */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Body */
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1rem;
+	line-height: 1.2;
+	background-color: #ffffff;
+}
+
+h1, 
+h2 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 2rem;
+	line-height: 1.5;
+}
+
+p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.96rem;
+	font-weight: lighter;
+}
+
+a:hover {
+	text-decoration: none;
+	color: var(--hero-color);
+}
+
+i {
+	font-size: 40px;
+}
+
+/* Navbar design */ 
+
+/* change the background color */
+.navbar-custom {
+	border-bottom: 3px solid;
+    border-bottom-color: var(--main-green);
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: var(--hero-color);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar-collapse {
+	display: flex;
+	justify-content: flex-end;
+}
+
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: rgba(28,37,47,.88);*/
+}
+/* change the color of active or hovered links */
+
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:focus .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: var(--hero-color);
+}
+
+.navbar-dark .nav-item.active .nav-link,
+.navbar-dark .nav-item:focus .nav-link,
+.navbar-dark .nav-item:hover .nav-link {
+    color: var(--hero-color);
+}
+
+/* Welcome Section */
+
+#welcome-section {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+
+.hero__content {
+	margin-top: 60px;
+}
+
+
+#text-color {
+	color: var(--hero-color);
+}
+
+/* Portfolio */ 
+
+#projects {
+	height: 100vh;
+	margin-top: -60px;
+	padding-top: 60px;
+	padding-bottom: 30px;
+}
+/* Contact section */ 
+
+#contact {
+	height: 50vh;
+	margin-top: -6em;
+	padding-top: 6em;
+	display: flex;
+	justify-content: center;
+}
+
+/* footer */
+
+.footer {
+	background-color: var(--main-black);
+	background-size: cover;
+	border-top: 3px solid var(--main-green);
+	height: 300px;
+	width: 100%;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container-footer h2 {
+	color: rgb(255, 255, 255, 0.88);
+	padding-top: 20px;
+}
+
+.container-footer p {
+	color: var(--main-green);
+	padding-top: 50px;
+	padding-bottom: 25px;
+}
+
+.list-inline li {
+	list-style: none;
+	display: inline-flex;
+	align-items: right; 
+}
+
+.list-inline li a {
+	padding: 25px 15px;
+	color: var(--main-green);
+	cursor: pointer;
+}
+
+.list-inline a:hover {
+	text-decoration: none;
+	color: var(--hero-color);
+}
+
+
