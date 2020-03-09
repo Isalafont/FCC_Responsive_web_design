@@ -1,0 +1,154 @@
+html, 
+body {
+	margin: 0;
+	padding: 0;
+	color: #4d4e53;
+	background-color: #ffffff;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1.5;
+}
+
+header,
+h1, 
+h2 {
+font-family: 'Lato', sans-serif;
+text-align: left;
+color: #38383f;
+font-weight: bold;
+line-height: 1.5;
+font-size: 1.5em;
+}
+
+article {
+	font-size: 0.96em;
+}
+
+p {
+font-family: 'Open Sans', sans-serif;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+/* Nav-bar design */
+
+.navbar {
+	position: fixed;
+	min-width: 250px;
+	width: 300px;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	border-right: solid;
+	border-color: rgba(0, 22, 22, 0.4);
+}
+
+.navbar header{
+	font-size: 1.3em;
+}
+
+.navbar ul {
+	padding: 0;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.navbar li {
+	color: #4d4e53;
+	list-style: none;
+	border-top: 1px solid;
+	position: relative;
+	width: 100%;
+}
+
+#main-doc header {
+	margin: 0px;
+}
+
+#main-doc {
+	position: absolute;
+	margin-left: 310px;
+	padding: 20px;
+	margin-bottom: 110px;
+}
+
+.main-section {
+	text-align: left;
+	text-justify: auto;
+}
+
+section article {
+	color: #4d4e53;
+	margin: 25px;
+	font-size: 0.96em;
+}
+
+section li {
+	margin: 15px 0px 0px 20px;
+}
+
+code {
+	display: block;
+	text-align: left;
+	white-space: pre;
+	position: relative;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 2;
+	background-color: #f7f7f7;
+	padding: 15px;
+	margin: 10px;
+	border-radius: 5px;
+}
+
+
+@media only screen and (max-width: 768px) {
+	/* For mobil Phone */
+	.navbar ul {
+		border: 1px solid;
+		height: 207px;
+	}
+
+	.navbar {
+		background-color: white;
+		position: absolute;
+		top: 0;
+		padding: 10px;
+		width: 100%;
+		max-height: 275px;
+		border: none;
+		z-index: 1;
+		border-bottom: 2px solid;
+	}
+
+
+	#main-doc {
+		position: relative;
+		margin-left: 0px;
+		margin-top: 270px;
+	}
+}
+
+@media only screen and (max-width: 575.98px) {
+	#main-doc {
+		margin-left: -10px;
+		width: 100%;
+	}
+
+	code {
+		margin-left: -20px;
+		width: 100%;
+		padding: 15px;
+		padding-left: 10px;
+		padding-right: 30px;
+		min-width: 200px;
+		word-break: break-all;
+		word-wrap: break-word;
+	}
+}
