@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+	<link href="style.css" type="text/css" rel="stylesheet">
+	<title>Free Code Camp: Survey Form</title>
+</head>
+
+<body>
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+	<div class="banner">
+		<h1 id="title">What's your favorite snowboard!</h1>
+		<p id="description">Thank you to take out the time to helps us to design your favorite snowboard</p>
+	</div>
+
+	<div class="container">
+		<form id="survey-form">
+			<div class="form-group">
+				<label id="name-label" for="name">Name</label>
+				<input 
+					type="text"
+					name="name"
+					id="name"
+					class="form-control"
+					placeholder="Enter your name"
+					required
+				/>
+			</div>
+
+			<div class="form-group">
+				<label id="email-label" for="email">Email</label>
+				<input 
+					type="email"
+					name="email"
+					id="email"
+					class="form-control"
+					placeholder="exemple@gmail.com"
+					required
+				/>
+			</div>
+
+			<div class="form-group">
+				<label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+				<input 
+					type="number"
+					name="age"
+					id="number"
+					min="7"
+					max="99"
+					class="form-control"
+					placeholder="Age"
+					required
+				/>
+			</div>
+
+			<div class="form-group">
+				<p>What's your favorite playground?</p>
+				<select id="dropdown" name="playground" class="form-control" required>
+					<option disabled selected value>Select a playground</option>
+					<option value="Slope-style">Slope</option>
+					<option value="Jib">Jib</option>
+					<option value="Backcountry">Backcountry</option>
+					<option value="Freeride">Freeride</option>
+					<option value="Boardercross">Boardercross</option>
+					<option value="everything">I love everything</option>
+					<option value="other">It's not in the list!</option>
+				</select>
+			</div>
+
+			<div class="form-group">
+				<p>What's your gender?</p>
+				<label>
+					<input type="radio" id="man" name="gender" value="man" class="input-radio"/>Man</label>
+				<label>	</br>
+					<input type="radio" id="woman" name="gender" value="woman" class="input-radio"/>Woman</label>
+				<label>	
+					<input type="radio" id="other" name="gender" value="other" class="input-radio"/>Other</label>
+			</div>
+
+			<div class="form-group">
+				<p>What is your favorite Snowboard brand?<span class="clue">(Check all that apply)</span>
+				</p>
+
+				<label>
+					<input 
+						type="checkbox" 
+						value="Nitro" 
+						name="brand" 
+						class="input-checkbox" 
+						checked
+					/>Nitro</label>
+				<label>
+					<input 
+						value="Rome"
+						name="brand"
+						type="checkbox"
+						class="input-checkbox"
+						/>Rome</label>
+				<label>
+					<input 
+						type="checkbox"
+						value="Burton"
+						name="brand"
+						class="input-checkbox"
+						/>Burton</label>
+				<label>
+					<input 
+						type="checkbox"
+						value="Salomon"
+						name="brand"
+						class="input-checkbox"
+						/>Salomon</label>
+				<label>
+					<input
+						type="checkbox"
+						value="Jones"
+						name="brand"
+						class="input-checkbox"
+						/>Jones</label>
+				<label>
+					<input
+						type="checkbox"
+						value="Lib Tech"
+						name="brand"
+						class="input-checkbox"
+						/>Lib Tech</label>
+				<label>
+					<input 
+						type="checkbox"
+						name="brand"
+						value="Other"
+						class="input-checkbox"
+						/>Other</label>
+			</div>
+
+			<div class="form-group">
+				<p>Any comments or suggestions?</p>
+				<textarea
+					id="comments"
+					class="input-textarea"
+					name="comments"
+					placeholder="Enter your comments here">
+				</textarea>
+			</div>
+			
+			<div class="form-group">
+				<button type="submit" id="submit" class="submit-button">
+					Submit
+				</button>
+			</div>
+		</form>
+	</div>
+	</body>
+</html>
