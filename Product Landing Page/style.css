@@ -1,0 +1,273 @@
+body {
+	margin: 0px;
+  	padding: 0px;
+  	box-sizing: border-box;
+	font-family: 'Titillium Web';
+	font-size: 17px;
+	line-height: 23px;
+	letter-spacing: .2px;
+	background: #f7f4f1;
+	background-size: 100% auto;
+}
+
+h1, h2 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: bolder;
+	color: #000000;
+}
+
+p {
+	font-family: 'Titillium Web', ;
+	font-weight: lighter;
+	color: #000000;
+}
+
+a {
+	color: white;
+	font-weight: bolder;
+	cursor: pointer;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+img {
+	vertical-align: middle;
+}
+
+/* Nav bar Design */
+
+header {
+	display: flex;
+	position: fixed; /* A retirer pour un header "normal" */
+	overflow: hidden;
+	width: 100%;
+	background-color: #f20102;
+	top: 0;
+	z-index: 1;
+}
+
+#nav-bar {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	height: 110px;
+	width: 100%;
+	border: 1px solid transparent;
+}
+
+#header-img {
+	height: 120px;
+	width: 50%;
+	margin-left: 80px;
+}
+
+#nav-bar .list-inline {
+	display: inline-flex;
+	color: #ffffff;
+}
+
+/* img design */
+
+.f1-img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* list design */
+
+.list-inline {
+	list-style: none;
+	padding: 0;
+}
+
+.list-inline li {
+	display: inline-block;
+	margin-right: 28px;
+}
+
+/* Jumbotron Design */
+
+.jumbotron {
+	background-image: linear-gradient(-225deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 50%), url(https://www.formula1.com/content/fom-website/en/drivers/kimi-raikkonen/_jcr_content/gallery/image61.img.1920.medium.jpg/1543323386024.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-position: center;
+    padding: 0px;
+    margin: 0px;
+    color: #fff;
+    display: block;
+}
+
+.jumbotron-info {
+	height: 421px;
+	width: 100%;
+	padding: 90px 0px;
+	display: flex;
+	justify-content: center;
+}
+
+.jumbotron .box {
+	max-width: 100%;
+}
+
+.box {
+	margin: 0 15px;
+}
+
+.col-sm-12 {
+	padding: 0px 15px;
+	display: flex;
+	border-top-style: solid;
+	border-top-width: 20px;
+}
+
+.jumbotron h1 {
+	font-size: 35px;
+	text-transform: uppercase;
+	color: #fff;
+	margin-top: 50px;
+	padding: 0px 25px;
+}
+
+/* Container Design */ 
+
+.container {
+	margin-top: 40px;
+	border-top: solid 10px #f20102;
+	border-right: solid 10px #f20102;
+	border-bottom: solid 10px #f20102;
+	display: block;
+	border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding-top: 25px;
+    padding-right: 20px;
+    padding-bottom: 25px;
+}
+
+.container-header {
+    letter-spacing: 0.5px;
+    padding: 0 25px 5px 0;
+}
+
+/* card design */
+
+.card-race {
+	max-width: 400px;
+	margin: auto;
+	text-align: center;
+	background-color: white;
+	border-radius: 0px 10px 10px 10px;
+	box-shadow: 0 4px 6px rgba(50,50,93,.11);
+}
+
+.card-race img{
+	width: 100%;
+	object-fit: cover;
+}
+
+.card-caption {
+	width: 100%;
+	height: 97px;
+	padding: 25px 20px 20px;
+    border: none;
+    transition: none!important;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.flag-logo {
+	float: left;
+	width: 44px;
+	height: 31px;
+	margin: 0px 15px 0px 15px;
+	border: 1px solid hsla(0,0%,47%,.4);
+    border-radius: 5px;
+    top: -41px;
+}
+
+.card-race h2 {
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 17px;
+	text-transform: uppercase;
+	position: relative;
+	margin: -7px 0px 0px 0px;
+}
+
+.card-race p {
+	font-size: 14px;
+	margin-bottom: 15px;
+}
+
+/* Video Design */ 
+
+#video {
+width: 100%;
+margin: 25px 0px 25px 0px;
+}
+
+/* Form Design */
+
+#email {
+	width:35%;
+}
+
+.btn {
+	background-color: #f20102;
+	color: #fff;
+	margin-left: 25px;
+}
+
+/* Footer Design */ 
+
+footer {
+	margin-top: 100px;
+}
+
+footer .list-inline {
+	display: inline-flex;
+	color: #ffffff;
+}
+
+.footer-top {
+	margin-top: 25px;
+	width: 100%;
+	background-color: #38383f;
+	padding: 10px 0px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.footer-top li a {
+	border: solid 1px #15151e;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 23px;
+    position: relative;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    padding-top: 7px;
+    margin-top: 15px;
+    color: #fff;
+}
+
+.footer-bottom {
+	width: 100%;
+	height:150px;
+	background-color: #16161f;
+	padding: 10px 0px;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.footer-bottom li a {
+	padding: 25px 15px;
+}
