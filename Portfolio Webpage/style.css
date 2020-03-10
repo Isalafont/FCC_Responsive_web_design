@@ -81,8 +81,8 @@ i {
 .navbar-custom .navbar-nav .nav-link {
     color: rgba(28,37,47,.88);*/
 }
-/* change the color of active or hovered links */
 
+/* change the color of active or hovered links */
 .navbar-custom .nav-item.active .nav-link,
 .navbar-custom .nav-item:focus .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
@@ -101,9 +101,6 @@ i {
 	height: 100vh;
 	margin-top: -50px;
 	padding-top: 100px;
-/*	background: rgb(2,0,36);
-    background: linear-gradient(293deg, rgba(2,0,36,0.8029586834733894) 6%, rgba(6,194,201,0.3211659663865546) 40%, rgba(68,75,107,0.5032387955182073) 75%);
-*/
 }
 
 .hero__title {
@@ -138,6 +135,7 @@ i {
 	padding-top: 50px;
 	padding-bottom: 30px;
 }
+
 /* Contact section */ 
 
 #contact {
