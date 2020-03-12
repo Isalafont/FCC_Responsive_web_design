@@ -99,16 +99,16 @@ i {
 
 #welcome-section {
 	height: 100vh;
-	margin-top: -50px;
-	padding-top: 100px;
+	/*margin-top: -50px;
+	padding-top: 100px;*/
 }
 
 .hero__title {
 	margin: 210px auto 0 auto;
 	max-width: 800px;
-    padding: 80px 50px 50px 50px;
-    width: 90%;
-    text-align: center;
+	padding: 80px 50px 50px 50px;
+	width: 90%;
+	text-align: center;
 }
 
 .hero__title h1 {
@@ -130,21 +130,109 @@ i {
 /* Portfolio */ 
 
 #projects {
-	height: 100vh;
+	height: 100%;
+	width: 100%;
 	margin-top: -50px;
 	padding-top: 50px;
-	padding-bottom: 30px;
+	padding-bottom: 50px;
+	background-color: rgba(28, 37, 47, 0.85);
+	color: rgba(255, 255, 255, 0.88);
+}
+
+.project-title {
+	margin: 80px auto 80px auto;
+	text-align: center;
+}
+
+.grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-rows: repeat (auto-fit, minmax(250px, 1fr));
+  grid-gap: 18px;
+}
+
+.project-tile {
+	text-align: center;
+	text-transform: uppercase;
+	justify-self: center;
+  	align-self: center;
+  	justify-items: center;
+  	align-items: center;
+	margin-bottom: 18px;
+	padding-bottom: 24px;
+	border-radius: 8px;
+	background: rgba(237,239,242,.34);
+	box-shadow: 0 4px 6px rgba(255,255,255,.11);
+}
+
+.project-tile img {
+	margin-bottom: 8px;
+	width: 300px;
+	height: 250px;
+	object-fit: cover;
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.p-tile {
+	margin-bottom: 0px;
+	color: rgb(237,239,242, 0);
+ 	transition: color 0.2s ease-out;
+}
+
+
+.project-tile:hover {
+	background: rgba(28, 37, 47, 0.85);
+	transition: background-color 0.2s ease-out;
+}
+
+.project-tile:hover img {
+	opacity: .3;
+}
+
+.project-tile:hover .p-tile {
+	color: var(--main-green);
+	font-weight: bolder;
+}
+
+.project-tile a {
+	color: white;
+	padding-top: 10px;
+}
+
+.project-tile a:hover {
+	color: var(--main-green);
 }
 
 /* Contact section */ 
 
 #contact {
-	height: 50vh;
+	height: 80vh;
+	width: 100%;
 	margin-top: -50px;
 	padding-top: 50px;
 	display: flex;
 	justify-content: center;
 }
+
+.container-contact {
+	display: block;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 120px 0px 80px 0px;
+}
+
+.container-contact p {
+	margin-top: 1.8rem;
+}
+
+/*.container-contact .list-inline {
+	margin-top: 80px;
+}*/
+
 
 /* footer */
 
@@ -161,7 +249,7 @@ i {
 }
 
 .container-footer h2 {
-	color: rgb(255, 255, 255, 0.88);
+	color: rgba(255, 255, 255, 0.88);
 	padding-top: 20px;
 }
 
